@@ -15,7 +15,8 @@
 
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
-(if (fboundp 'scoll-bar-mode) (scroll-bar-mode nil))
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+
 (setq inhibit-startup-message t)
 
 (add-to-list 'load-path (expand-file-name "elisp" user-emacs-directory))
